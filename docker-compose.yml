@@ -1,0 +1,11 @@
+version: '2.23.3'
+services: 
+    react-container:
+      build: .
+      ports:
+        - 5174:5174
+      volumes:
+        - ./src:/app/src
+        - /app/node_modules
+      
+      
